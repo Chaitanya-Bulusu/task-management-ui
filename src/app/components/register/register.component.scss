@@ -1,0 +1,60 @@
+.register-card {
+    max-width: 480px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+    background: #ffffff;
+}
+
+.register-card ::ng-deep .mat-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+mat-form-field.full-width {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.error-message {
+    color: #b00020;
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+.register-card button.full-width,
+.register-card button {
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+mat-card-actions .action-note {
+    margin: 0.75rem 0 0;
+    font-size: 0.9rem;
+    color: #374151;
+    text-align: center;
+}
+
+mat-card-actions .action-note a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+mat-card-actions .action-note a:hover {
+    text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+    .register-card {
+        margin: 1rem;
+        padding: 0.75rem;
+    }
+}

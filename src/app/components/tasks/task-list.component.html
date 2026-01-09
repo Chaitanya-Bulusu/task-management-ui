@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-title>My Tasks</mat-card-title>
+
+    <div class="actions" style="margin-bottom: 1rem;">
+        <a mat-raised-button color="primary" routerLink="/tasks/create">Create Task</a>
+        @if(hasFilters) {
+        <button mat-stroked-button color="accent" (click)="clearFilters()" style="margin-left: 1rem;">
+            Clear Filters
+        </button>
+        }
+    </div>
+    <ag-grid-angular #agGrid style="width: 100%; height: 400px; margin-bottom: 1.5rem;" class="ag-theme-alpine"
+        [rowData]="tasks" [columnDefs]="columnDefs" [domLayout]="'autoHeight'" [suppressRowClickSelection]="true"
+        [rowSelection]="'single'" (gridReady)="onGridReady($event)" (filterChanged)="onFilterChanged()">
+    </ag-grid-angular>
+</mat-card>

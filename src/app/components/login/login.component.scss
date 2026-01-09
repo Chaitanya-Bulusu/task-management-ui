@@ -1,0 +1,51 @@
+.login-card {
+    max-width: 420px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+}
+
+.full-width {
+    width: 100%;
+}
+
+mat-form-field.full-width {
+    display: block;
+    width: 100%;
+}
+
+.error-message {
+    color: #b00020;
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+.login-card button {
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+.login-card p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.login-card a[routerLink] {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.login-card a[routerLink]:hover {
+    text-decoration: underline;
+}
+
+/* responsive tweaks */
+@media (max-width: 480px) {
+    .login-card {
+        margin: 1rem;
+        padding: 0.75rem;
+    }
+}

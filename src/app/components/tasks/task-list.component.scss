@@ -1,0 +1,23 @@
+.filters {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+
+  mat-form-field {
+    flex: 1;
+    min-width: 180px;
+  }
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+mat-card-title {
+  margin-bottom: 1rem;
+}
+
+mat-paginator {
+  margin-top: 1rem;
+}

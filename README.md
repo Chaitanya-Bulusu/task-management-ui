@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Updating the Base API URL
+
+To change the backend API base URL, edit the `BASE_URL` value in [`src/app/api.constants.ts`](src/app/api.constants.ts):
+
+```typescript
+export const API_CONSTANTS = {
+  BASE_URL: 'https://your-new-api-url.com/api',
+  // ...other endpoints...
+};
+```

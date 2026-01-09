@@ -37,6 +37,15 @@
           }
         }
       }
+    },
+    {
+      "label": "lint",
+      "type": "shell",
+      "command": "npm run lint",
+      "group": "build",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
     }
   ]
 }
